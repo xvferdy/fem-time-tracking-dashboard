@@ -37,46 +37,81 @@ div {
 
 .dashboard {
   display: grid;
-  grid-template-areas: "profile work play study" "profile exercise social self-card ";
+  grid-auto-columns: 1fr;
+  gap: 10px;
+  grid-template-areas: "profile work play study" "profile exercise social self-care";
 }
 .dashboard .profile {
   grid-area: profile;
 }
-.dashboard .work {
+.dashboard .card--work {
   grid-area: work;
 }
-.dashboard .play {
+.dashboard .card--play {
   grid-area: play;
 }
-.dashboard .study {
+.dashboard .card--study {
   grid-area: study;
 }
-.dashboard .exercise {
+.dashboard .card--exercise {
   grid-area: exercise;
 }
-.dashboard .social {
+.dashboard .card--social {
   grid-area: social;
 }
-.dashboard .self-card {
-  grid-area: self-card;
+.dashboard .card--self-care {
+  grid-area: self-care;
+}
+@media only screen and (max-width: 600px) {
+  .dashboard {
+    grid-template-areas: "profile work play" "profile study exercise" "social self-care null";
+  }
+  .dashboard .profile {
+    background-color: #912929;
+  }
+}
+
+.card--self-care, .card--social, .card--exercise, .card--study, .card--play, .card--work {
+  background-repeat: no-repeat;
+  background-position: 90% 0;
+  background-size: 30px;
 }
 
 .card {
-  background-color: rebeccapurple;
-  margin: 5px;
+  position: relative;
   overflow: hidden;
 }
 .card__content {
   margin-top: 21px;
   background-color: rosybrown;
-  height: 100%;
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.card--work {
+  background-image: url("../../assets/images/icon-work.svg");
+  background-color: chartreuse;
 }
 .card--play {
   background-image: url("../../assets/images/icon-play.svg");
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: 90% 0;
-  background-size: 30px;
+  background-color: chartreuse;
+}
+.card--study {
+  background-image: url("../../assets/images/icon-study.svg");
+  background-color: chartreuse;
+}
+.card--exercise {
+  background-image: url("../../assets/images/icon-exercise.svg");
+  background-color: chartreuse;
+}
+.card--social {
+  background-image: url("../../assets/images/icon-social.svg");
+  background-color: chartreuse;
+}
+.card--self-care {
+  background-image: url("../../assets/images/icon-self-care.svg");
+  background-color: #849b6c;
 }
 
 /*# sourceMappingURL=main.css.map */

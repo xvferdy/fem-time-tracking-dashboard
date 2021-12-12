@@ -2,9 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 
 import { PeriodContext } from "../context/Period.context";
 
-// images
 import ellipsis from "../assets/images/icon-ellipsis.svg";
-import work from "../assets/images/icon-work.svg";
 
 function Card({ title, timeframes }) {
 	const period = useContext(PeriodContext);
@@ -19,17 +17,15 @@ function Card({ title, timeframes }) {
 	}, [period, timeframes]);
 
 	return (
-		<div className={`card card--${title.toLowerCase()}`}>
-			<div className="card-sleeve">
-				<div className="card__content">
-					<div className="card__content-title">
-						<p>{title}</p>
-						<img src={ellipsis} alt="" />
-					</div>
-					<div className="card__content-detail">
-						<h3>{current}hrs</h3>
-						<p>Yesterday - {previous}hrs</p>
-					</div>
+		<div className={`card card--${title.toLowerCase().split(" ").join("-")}`}>
+			<div className="card__content">
+				<div className="card__content-title">
+					<p>{title}</p>
+					<img src={ellipsis} alt="" />
+				</div>
+				<div className="card__content-detail">
+					<h3>{current}hrs</h3>
+					<p>Yesterday - {previous}hrs</p>
 				</div>
 			</div>
 		</div>

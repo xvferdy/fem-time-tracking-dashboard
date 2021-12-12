@@ -1,27 +1,42 @@
+@use "../helpers/" as *;
+
 .dashboard {
 	display: grid;
+	grid-auto-columns: 1fr;
+	gap: 10px;
 	grid-template-areas:
 		"profile work play study"
-		"profile exercise social self-card ";
+		"profile exercise social self-care";
 	.profile {
 		grid-area: profile;
 	}
-	.work {
+	.card--work {
 		grid-area: work;
 	}
-	.play {
+	.card--play {
 		grid-area: play;
 	}
-	.study {
+	.card--study {
 		grid-area: study;
 	}
-	.exercise {
+	.card--exercise {
 		grid-area: exercise;
 	}
-	.social {
+	.card--social {
 		grid-area: social;
 	}
-	.self-card {
-		grid-area: self-card;
+	.card--self-care {
+		grid-area: self-care;
+	}
+
+	@include display(phone) {
+		grid-template-areas:
+			"profile work play"
+			"profile study exercise"
+			"social self-care null";
+
+		.profile {
+			background-color: rgb(145, 41, 41);
+		}
 	}
 }

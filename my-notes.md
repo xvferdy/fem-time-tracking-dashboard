@@ -13,6 +13,9 @@
 - [ ] firefox n chrome trestr
 - [ ] footer
 
+## caran
+- fs, 40menit (sass problem)
+- skelleton, 1:20 - 
 
 ## Readme
-- bla
+- timeline time per branch/

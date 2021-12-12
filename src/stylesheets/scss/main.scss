@@ -1,5 +1,8 @@
+// base
 @use "./base/base";
 @use "./base/typography";
 @use "./base/container";
 
+// components
 @use "./components/dashboard";
+@use "./components/card";

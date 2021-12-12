@@ -1,8 +1,10 @@
 import React, { useEffect, useState, useContext } from "react";
 
-import work from "../assets/images/icon-work.svg";
-import ellipsis from "../assets/images/icon-ellipsis.svg";
 import { PeriodContext } from "../context/Period.context";
+
+// images
+import ellipsis from "../assets/images/icon-ellipsis.svg";
+import work from "../assets/images/icon-work.svg";
 
 function Card({ title, timeframes }) {
 	const period = useContext(PeriodContext);
@@ -17,10 +19,8 @@ function Card({ title, timeframes }) {
 	}, [period, timeframes]);
 
 	return (
-		<div className="card">
+		<div className={`card card--${title.toLowerCase()}`}>
 			<div className="card-sleeve">
-				<img src={work} alt="" />
-
 				<div className="card__content">
 					<div className="card__content-title">
 						<p>{title}</p>

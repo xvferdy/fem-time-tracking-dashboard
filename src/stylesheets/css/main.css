@@ -61,4 +61,22 @@ div {
   grid-area: self-card;
 }
 
+.card {
+  background-color: rebeccapurple;
+  margin: 5px;
+  overflow: hidden;
+}
+.card__content {
+  margin-top: 21px;
+  background-color: rosybrown;
+  height: 100%;
+}
+.card--play {
+  background-image: url("../../assets/images/icon-play.svg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 90% 0;
+  background-size: 30px;
+}
+
 /*# sourceMappingURL=main.css.map */

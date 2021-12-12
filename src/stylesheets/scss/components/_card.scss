@@ -8,47 +8,71 @@
 }
 
 .card {
-	// border-radius: 1.5rem;
 	position: relative;
-	overflow: hidden;
+	// overflow: hidden;
+	border-radius: 1.5rem;
+	// display: flex;
 
 	&__content {
-		margin-top: 21px;
-		background-color: rosybrown;
+		// margin-top: 21px;
+		display: flex;
+		flex-direction: column;
+		gap: 2.4rem;
 		height: 80%;
 		width: 100%;
 		position: absolute;
 		bottom: 0;
+		background-color: $dark-blue;
+		padding: 2.9rem;
+		border-radius: 1.5rem; //FIXME:
+
+		&-title {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			p {
+				font-size: 1.8rem;
+				color: white;
+			}
+		}
+		&-detail {
+			h3 {
+				color: white;
+			}
+			p {
+				color: $pale-blue;
+			}
+		}
 	}
 
 	&--work {
 		background-image: url("../../assets/images/icon-work.svg");
-		background-color: chartreuse;
+		background-color: $light-red-work;
 		@extend %card-sleeve;
 	}
 	&--play {
 		background-image: url("../../assets/images/icon-play.svg");
-		background-color: chartreuse;
+		background-color: $soft-blue-play;
 		@extend %card-sleeve;
 	}
 	&--study {
 		background-image: url("../../assets/images/icon-study.svg");
-		background-color: chartreuse;
+		background-color: $light-red-study;
 		@extend %card-sleeve;
 	}
 	&--exercise {
 		background-image: url("../../assets/images/icon-exercise.svg");
-		background-color: chartreuse;
+		background-color: $lime-green-exercise;
 		@extend %card-sleeve;
 	}
 	&--social {
 		background-image: url("../../assets/images/icon-social.svg");
-		background-color: chartreuse;
+		background-color: $violet-social;
 		@extend %card-sleeve;
 	}
 	&--self-care {
 		background-image: url("../../assets/images/icon-self-care.svg");
-		background-color: rgb(132, 155, 108);
+		background-color: $soft-orange-self-care;
 		@extend %card-sleeve;
 	}
 }

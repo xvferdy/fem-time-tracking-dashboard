@@ -6,7 +6,6 @@
   padding: 0;
   box-sizing: inherit;
   font-family: "Rubik", sans-serif;
-  border: 1px solid grey;
 }
 
 body {
@@ -19,13 +18,21 @@ html {
   scroll-behavior: smooth;
 }
 
-h1,
-h2,
-h3,
-p,
-a,
-div {
-  color: #c7c7c7;
+h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 4rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 5.6rem;
+  line-height: 6.6rem;
+  font-weight: 300;
 }
 
 .container {
@@ -38,7 +45,7 @@ div {
 .dashboard {
   display: grid;
   grid-auto-columns: 1fr;
-  gap: 10px;
+  gap: 3rem;
   grid-template-areas: "profile work play study" "profile exercise social self-care";
 }
 .dashboard .profile {
@@ -79,39 +86,102 @@ div {
 
 .card {
   position: relative;
-  overflow: hidden;
+  border-radius: 1.5rem;
 }
 .card__content {
-  margin-top: 21px;
-  background-color: rosybrown;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
   height: 80%;
   width: 100%;
   position: absolute;
   bottom: 0;
+  background-color: #1c1f4a;
+  padding: 2.9rem;
+  border-radius: 1.5rem;
+}
+.card__content-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__content-title p {
+  font-size: 1.8rem;
+  color: white;
+}
+.card__content-detail h3 {
+  color: white;
+}
+.card__content-detail p {
+  color: #bdc1ff;
 }
 .card--work {
   background-image: url("../../assets/images/icon-work.svg");
-  background-color: chartreuse;
+  background-color: #ff8c66;
 }
 .card--play {
   background-image: url("../../assets/images/icon-play.svg");
-  background-color: chartreuse;
+  background-color: #56c2e6;
 }
 .card--study {
   background-image: url("../../assets/images/icon-study.svg");
-  background-color: chartreuse;
+  background-color: #ff5c7c;
 }
 .card--exercise {
   background-image: url("../../assets/images/icon-exercise.svg");
-  background-color: chartreuse;
+  background-color: #4acf81;
 }
 .card--social {
   background-image: url("../../assets/images/icon-social.svg");
-  background-color: chartreuse;
+  background-color: #7536d3;
 }
 .card--self-care {
   background-image: url("../../assets/images/icon-self-care.svg");
-  background-color: #849b6c;
+  background-color: #f1c65b;
+}
+
+.profile {
+  max-width: 25.5rem;
+  background-color: #1c1f4a;
+  border-radius: 1.5rem;
+}
+.profile__header {
+  padding: 3.4rem 2.9rem;
+  padding-right: 7.5rem;
+  padding-bottom: 10.4rem;
+  background-color: #5847eb;
+  border-radius: inherit;
+}
+.profile__header img {
+  width: 7.9rem;
+  border: 0.3rem solid white;
+  border-radius: 50%;
+}
+.profile__header p {
+  margin-top: 3.8rem;
+  color: #bdc1ff;
+}
+.profile__header h1 {
+  margin-top: 0.1rem;
+}
+.profile__tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.1rem;
+  padding: 2.6rem 3.2rem;
+  padding-bottom: 3.2rem;
+}
+.profile__tabs button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 1.8rem;
+  color: #6f76c8;
+}
+.profile__tabs button:hover, .profile__tabs button:focus {
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

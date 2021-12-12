@@ -3,7 +3,7 @@
 .dashboard {
 	display: grid;
 	grid-auto-columns: 1fr;
-	gap: 10px;
+	gap: 3rem;
 	grid-template-areas:
 		"profile work play study"
 		"profile exercise social self-care";

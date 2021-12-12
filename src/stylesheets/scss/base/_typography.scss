@@ -1,5 +1,13 @@
 @use "../helpers/" as *;
 
-h1 {
-  color: red;
+// - Font size: 18px (card titles e.g. Work, Play)
+
+// sementara
+h1,
+h2,
+h3,
+p,
+a,
+div {
+  color: rgb(199, 199, 199);
 }

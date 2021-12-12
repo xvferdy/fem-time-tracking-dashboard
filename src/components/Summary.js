@@ -1,7 +1,12 @@
 import React from "react";
+import Card from "./Card";
 
 function Summary() {
-  return <div>summary</div>;
+	return (
+		<div className="summary">
+			<Card />
+		</div>
+	);
 }
 
 export default Summary;

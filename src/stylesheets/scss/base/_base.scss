@@ -1,5 +1,22 @@
 @use "../helpers/" as *;
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: $primary-font;
+  // border: 1px solid grey;
+  // overflow-x: hidden;
+}
+
 body {
-  background-color: rgb(189, 196, 196);
+  box-sizing: border-box;
+  background-color: $very-dark-blue;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }

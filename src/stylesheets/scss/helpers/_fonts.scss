@@ -1,1 +1,7 @@
-// fonts
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+$font-weights: (
+  "light": 300,
+  "regular": 400,
+  "medium": 500,
+);
+$primary-font: "Rubik", sans-serif;

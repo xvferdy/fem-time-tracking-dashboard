@@ -1,11 +1,14 @@
+import Profile from "./components/Profile";
+import Summary from "./components/Summary";
 import "./stylesheets/css/main.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello world</h1>
-      </header>
+    <div className="container">
+      <main>
+        <Profile />
+        <Summary />
+      </main>
     </div>
   );
 }

@@ -15,7 +15,9 @@
 
 ## caran
 - fs, 40menit (sass problem)
-- skelleton, 1:20 - 
+- skelleton, 1:20 - 3.20
+- core func 4.10 - 7.34
+- stuck img (mnasih di core func) 7.30 - 9.00
 
 ## Readme
-- timeline time per branch/
+- timeline time per branch/ + sub timeline detail (list of what prob facein)

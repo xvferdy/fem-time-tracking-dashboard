@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: inherit;
   font-family: "Rubik", sans-serif;
+  border: 1px solid grey;
 }
 
 body {
@@ -32,6 +33,85 @@ div {
   display: grid;
   place-items: center;
   padding: 2.4rem;
+}
+
+.dashboard {
+  display: grid;
+  grid-auto-columns: 1fr;
+  gap: 10px;
+  grid-template-areas: "profile work play study" "profile exercise social self-care";
+}
+.dashboard .profile {
+  grid-area: profile;
+}
+.dashboard .card--work {
+  grid-area: work;
+}
+.dashboard .card--play {
+  grid-area: play;
+}
+.dashboard .card--study {
+  grid-area: study;
+}
+.dashboard .card--exercise {
+  grid-area: exercise;
+}
+.dashboard .card--social {
+  grid-area: social;
+}
+.dashboard .card--self-care {
+  grid-area: self-care;
+}
+@media only screen and (max-width: 600px) {
+  .dashboard {
+    grid-template-areas: "profile work play" "profile study exercise" "social self-care null";
+  }
+  .dashboard .profile {
+    background-color: #912929;
+  }
+}
+
+.card--self-care, .card--social, .card--exercise, .card--study, .card--play, .card--work {
+  background-repeat: no-repeat;
+  background-position: 90% 0;
+  background-size: 30px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+.card__content {
+  margin-top: 21px;
+  background-color: rosybrown;
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.card--work {
+  background-image: url("../../assets/images/icon-work.svg");
+  background-color: chartreuse;
+}
+.card--play {
+  background-image: url("../../assets/images/icon-play.svg");
+  background-color: chartreuse;
+}
+.card--study {
+  background-image: url("../../assets/images/icon-study.svg");
+  background-color: chartreuse;
+}
+.card--exercise {
+  background-image: url("../../assets/images/icon-exercise.svg");
+  background-color: chartreuse;
+}
+.card--social {
+  background-image: url("../../assets/images/icon-social.svg");
+  background-color: chartreuse;
+}
+.card--self-care {
+  background-image: url("../../assets/images/icon-self-care.svg");
+  background-color: #849b6c;
 }
 
 /*# sourceMappingURL=main.css.map */

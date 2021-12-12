@@ -1,1 +1,54 @@
 @use "../helpers/" as *;
+
+%card-sleeve {
+	// position: relative;
+	background-repeat: no-repeat;
+	background-position: 90% 0;
+	background-size: 30px;
+}
+
+.card {
+	// border-radius: 1.5rem;
+	position: relative;
+	overflow: hidden;
+
+	&__content {
+		margin-top: 21px;
+		background-color: rosybrown;
+		height: 80%;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+	}
+
+	&--work {
+		background-image: url("../../assets/images/icon-work.svg");
+		background-color: chartreuse;
+		@extend %card-sleeve;
+	}
+	&--play {
+		background-image: url("../../assets/images/icon-play.svg");
+		background-color: chartreuse;
+		@extend %card-sleeve;
+	}
+	&--study {
+		background-image: url("../../assets/images/icon-study.svg");
+		background-color: chartreuse;
+		@extend %card-sleeve;
+	}
+	&--exercise {
+		background-image: url("../../assets/images/icon-exercise.svg");
+		background-color: chartreuse;
+		@extend %card-sleeve;
+	}
+	&--social {
+		background-image: url("../../assets/images/icon-social.svg");
+		background-color: chartreuse;
+		@extend %card-sleeve;
+	}
+	&--self-care {
+		background-image: url("../../assets/images/icon-self-care.svg");
+		background-color: rgb(132, 155, 108);
+		@extend %card-sleeve;
+	}
+}

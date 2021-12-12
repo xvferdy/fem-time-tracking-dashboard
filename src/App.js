@@ -1,16 +1,18 @@
-import Profile from "./components/Profile";
-import Summary from "./components/Summary";
+import Dashboard from "./components/Dashboard";
+
 import "./stylesheets/css/main.css";
 
+// context provider
+import { PeriodProvider } from "./context/Period.context";
+
 function App() {
-  return (
-    <div className="container">
-      <main>
-        <Profile />
-        <Summary />
-      </main>
-    </div>
-  );
+	return (
+		<div className="container">
+			<PeriodProvider>
+				<Dashboard />
+			</PeriodProvider>
+		</div>
+	);
 }
 
 export default App;

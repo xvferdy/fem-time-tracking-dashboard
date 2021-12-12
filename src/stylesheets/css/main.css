@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: inherit;
   font-family: "Rubik", sans-serif;
+  border: 1px solid grey;
 }
 
 body {
@@ -32,6 +33,32 @@ div {
   display: grid;
   place-items: center;
   padding: 2.4rem;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-areas: "profile work play study" "profile exercise social self-card ";
+}
+.dashboard .profile {
+  grid-area: profile;
+}
+.dashboard .work {
+  grid-area: work;
+}
+.dashboard .play {
+  grid-area: play;
+}
+.dashboard .study {
+  grid-area: study;
+}
+.dashboard .exercise {
+  grid-area: exercise;
+}
+.dashboard .social {
+  grid-area: social;
+}
+.dashboard .self-card {
+  grid-area: self-card;
 }
 
 /*# sourceMappingURL=main.css.map */

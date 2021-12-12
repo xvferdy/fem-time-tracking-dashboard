@@ -1,0 +1,27 @@
+.dashboard {
+	display: grid;
+	grid-template-areas:
+		"profile work play study"
+		"profile exercise social self-card ";
+	.profile {
+		grid-area: profile;
+	}
+	.work {
+		grid-area: work;
+	}
+	.play {
+		grid-area: play;
+	}
+	.study {
+		grid-area: study;
+	}
+	.exercise {
+		grid-area: exercise;
+	}
+	.social {
+		grid-area: social;
+	}
+	.self-card {
+		grid-area: self-card;
+	}
+}

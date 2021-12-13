@@ -25,7 +25,7 @@ h3,
 p,
 a,
 div {
-  color: #1f1f1f;
+  color: white;
 }
 
 .container {
@@ -43,6 +43,7 @@ div {
 }
 .dashboard .profile {
   grid-area: profile;
+  background-color: #5847eb;
 }
 .dashboard .card--work {
   grid-area: work;
@@ -66,9 +67,6 @@ div {
   .dashboard {
     grid-template-areas: "profile work play" "profile study exercise" "social self-care null";
   }
-  .dashboard .profile {
-    background-color: #912929;
-  }
 }
 
 .card--self-care, .card--social, .card--exercise, .card--study, .card--play, .card--work {
@@ -83,35 +81,38 @@ div {
 }
 .card__content {
   margin-top: 21px;
-  background-color: rosybrown;
+  background: #1c1f4a;
   height: 80%;
   width: 100%;
   position: absolute;
   bottom: 0;
 }
+.card__content:hover {
+  background: rgba(28, 31, 74, 0.5);
+}
 .card--work {
   background-image: url("../../assets/images/icon-work.svg");
-  background-color: chartreuse;
+  background-color: #ff8c66;
 }
 .card--play {
   background-image: url("../../assets/images/icon-play.svg");
-  background-color: chartreuse;
+  background-color: #56c2e6;
 }
 .card--study {
   background-image: url("../../assets/images/icon-study.svg");
-  background-color: chartreuse;
+  background-color: #ff5c7c;
 }
 .card--exercise {
   background-image: url("../../assets/images/icon-exercise.svg");
-  background-color: chartreuse;
+  background-color: #4acf81;
 }
 .card--social {
   background-image: url("../../assets/images/icon-social.svg");
-  background-color: chartreuse;
+  background-color: #7536d3;
 }
 .card--self-care {
   background-image: url("../../assets/images/icon-self-care.svg");
-  background-color: #849b6c;
+  background-color: #f1c65b;
 }
 
 /*# sourceMappingURL=main.css.map */

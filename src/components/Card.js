@@ -25,7 +25,14 @@ function Card({ title, timeframes }) {
 				</div>
 				<div className="card__content-detail">
 					<h3>{current}hrs</h3>
-					<p>Yesterday - {previous}hrs</p>
+					<p>
+						{period === "daily"
+							? "Yesterday "
+							: period === "weekly"
+							? "Last Week "
+							: "Last Month "}{" "}
+						- {previous}hrs
+					</p>
 				</div>
 			</div>
 		</div>

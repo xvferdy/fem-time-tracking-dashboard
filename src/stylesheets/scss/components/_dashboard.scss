@@ -9,6 +9,7 @@
 		"profile exercise social self-care";
 	.profile {
 		grid-area: profile;
+		background-color: $blue;
 	}
 	.card--work {
 		grid-area: work;
@@ -34,9 +35,5 @@
 			"profile work play"
 			"profile study exercise"
 			"social self-care null";
-
-		.profile {
-			background-color: rgb(145, 41, 41);
-		}
 	}
 }

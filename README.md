@@ -29,7 +29,7 @@ If you would like to practice working with JSON data, we provide a local `data.j
 
 **Preview** :eyeglasses:
 
-![Design preview for the Loopstudios landing page coding challenge](./src/assets/design/desktop-preview.jpg)
+![Design preview for the Loopstudios landing page coding challenge](./src/assets/overview.png)
 
 ### The challenge 
 Users should be able to:
@@ -51,7 +51,7 @@ Users should be able to:
 > ▐ <br>
 > 🧑‍💻 Struggling <br>
 > ▐ <br>
-> 🗓️ Ended up in **6 days**
+> 🗓️ Still working on it and later will uploaded in [**main**](https://github.com/xvferdy/fem-time-tracking-dashboard) branch
 
 ### Built with
 - [React](https://reactjs.org/ "React js")
@@ -61,17 +61,17 @@ Learn how to change background opacity without affecting text. 👉 `rgba($color
 
 ###### src/stylesheets/components/\_card.scss
 ```scss
-  &__content {
-    margin-top: 21px;
-    background: rgba($dark-blue, 1);
-    height: 80%;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    &:hover {
-      background: rgba($dark-blue, 0.5);
-    }
+&__content {
+  margin-top: 21px;
+  background: rgba($dark-blue, 1);
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  &:hover {
+    background: rgba($dark-blue, 0.5);
   }
+}
 ```
 
 ### Difficult Things 😵‍💫
@@ -83,5 +83,5 @@ Things were difficult for me and I finally gave up
 |:---:|
 
 <h3 align="right">
-      <a href="#loopstudios-landing-page">To Top ⤴️</a>
+      <a href="#time-tracking-dashboard">To Top ⤴️</a>
 </h3>

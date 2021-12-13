@@ -49,7 +49,13 @@ Users should be able to:
 ## My process
 > ⌛ I challenge my self to finish this for **~3 days** <br>
 > ▐ <br>
-> 🧑‍💻 Struggling <br>
+> 🧑‍💻 Wiring up HTML skeleton <br>
+> ▐ <br>
+> 🧑‍💻 **Javascript** `~4 Hours`<br>
+> ▐ <br>
+> 🧑‍💻 **Little CSS** `~3 Hours`<br>
+> ▐ <br>
+> 🌐 **Day 3** - Submit to [**Frontend Mentor**](https://www.frontendmentor.io/home)  <br>
 > ▐ <br>
 > 🗓️ Still working on it and later will uploaded in [**main**](https://github.com/xvferdy/fem-time-tracking-dashboard) branch
 
@@ -84,5 +90,5 @@ Things were difficult for me and I finally gave up 🤙
 |:---:|
 
 <h3 align="right">
-      <a href="#time-tracking-dashboard">To Top ⤴️</a>
+      <a href="#time-tracking-dashboard">To Top ✪</a>
 </h3>

@@ -3,11 +3,14 @@
 // - Font size: 18px (card titles e.g. Work, Play)
 
 // sementara
-h1,
+h1 {
+	color: wheat;
+}
+
 h2,
 h3,
 p,
 a,
 div {
-  color: rgb(199, 199, 199);
+	color: rgb(31, 31, 31);
 }

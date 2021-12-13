@@ -5,19 +5,14 @@
 *::after {
 	margin: 0;
 	padding: 0;
-	box-sizing: inherit;
+	box-sizing: border-box;
 	font-family: $primary-font;
-
-	border: 1px solid grey;
-	// overflow-x: hidden;
 }
 
 body {
-	box-sizing: border-box;
 	background-color: $very-dark-blue;
 }
 
 html {
-	font-size: 62.5%;
 	scroll-behavior: smooth;
 }

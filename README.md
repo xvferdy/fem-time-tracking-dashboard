@@ -43,7 +43,7 @@ Users should be able to:
 [![🐬 Junior Difficulty List](https://img.shields.io/badge/Difficulty-Junior-3F54A3?style=for-the-badge&logo=frontendmentor "Junior Difficulty")](https://www.frontendmentor.io/challenges?difficulties=2)
 
 ## Links
-- Solution URL: Later
+- Solution URL: [Here](https://www.frontendmentor.io/solutions/femtimetrackingdashboard-ujF6vcWFM)
 - Live Site URL: [Here](https://fem-time-tracking-dashboard.netlify.app/ "Live")
 
 ## My process

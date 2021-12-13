@@ -13,8 +13,10 @@ function Profile() {
 		<section className="profile">
 			<div className="profile__header">
 				<img src={avatar} alt="Jeremy profile avatar" />
-				<p>Report for</p>
-				<h1>Jeremy Robson</h1>
+				<div className="profile__header-text">
+					<p>Report for</p>
+					<h1>Jeremy Robson</h1>
+				</div>
 			</div>
 			<div className="profile__tabs">
 				<button

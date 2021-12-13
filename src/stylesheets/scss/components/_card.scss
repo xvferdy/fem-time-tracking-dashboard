@@ -1,47 +1,38 @@
 @use "../helpers/" as *;
 
 %card-sleeve {
-	// position: relative;
 	background-repeat: no-repeat;
 	background-position: 90% -5%;
-
-	// min-height: 246px;
 }
 
 .card {
 	position: relative;
 	// overflow: hidden;
 	border-radius: 1.5rem;
-	// display: flex;
-
 	&__content {
-		// margin-top: 41px;
-		transform: translateY(45px);
-
 		display: flex;
 		flex-direction: column;
-
 		gap: 2.4rem;
 
-		// height: 100%;
-		// width: 100%;
+		// height: 80%;
+		width: 100%;
 
-		// position: absolute;
-		// bottom: 0;
+		position: absolute;
+		bottom: 0;
 
 		background-color: $dark-blue;
-		// padding: 2.2rem;
+
 		padding: 2.2rem;
 		padding-bottom: 3rem;
 
 		border-radius: 1.5rem; //FIXME:
-		border: 7px solid white;
+		// border-bottom-left-radius: 1rem;
+		// border-bottom-right-radius: 1rem;
 
+		// border: 7px solid white;
 		//ss
-		// padding: 2.5rem;
-		// border: 7px solid $dark-blue;
-		// height: 203px;
-
+		border: 7px solid $dark-blue;
+		transition: 0.2s;
 		&-title {
 			display: flex;
 			justify-content: space-between;
@@ -49,6 +40,9 @@
 			p {
 				font-size: 1.8rem;
 				color: white;
+			}
+			img:hover {
+				filter: brightness(1.75);
 			}
 		}
 		&-detail {
@@ -59,6 +53,25 @@
 			p {
 				color: $pale-blue;
 			}
+		}
+		&:hover {
+			cursor: pointer;
+			background-color: darken($desaturated-blue, 10%);
+		}
+		@include display(phone) {
+			gap: 0;
+			padding: 2.2rem;
+			padding-top: 2.5rem;
+			&-detail {
+				display: flex;
+				justify-content: space-between;
+				gap: 0.2rem;
+				align-items: center;
+				flex-wrap: wrap;
+			}
+		}
+		@include display(sm-phone) {
+			border: 0;
 		}
 	}
 

@@ -24,6 +24,12 @@ h1 {
   font-weight: 300;
   line-height: 4rem;
 }
+@media only screen and (max-width: 750px) {
+  h1 {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+  }
+}
 
 p {
   font-size: 1.5rem;
@@ -49,7 +55,12 @@ h3 {
   min-height: calc(100vh - 20px);
   display: grid;
   place-items: center;
-  padding: 2.4rem;
+  padding: 7.2rem 2.4rem;
+}
+@media only screen and (max-width: 750px) {
+  .container {
+    display: block;
+  }
 }
 
 .dashboard {
@@ -103,15 +114,18 @@ h3 {
   border-radius: 1.5rem;
 }
 .card__content {
-  transform: translateY(45px);
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
   background-color: #1c1f4a;
   padding: 2.2rem;
   padding-bottom: 3rem;
   border-radius: 1.5rem;
-  border: 7px solid white;
+  border: 7px solid #1c1f4a;
+  transition: 0.2s;
 }
 .card__content-title {
   display: flex;
@@ -122,12 +136,38 @@ h3 {
   font-size: 1.8rem;
   color: white;
 }
+.card__content-title img:hover {
+  filter: brightness(1.75);
+}
 .card__content-detail h3 {
   color: white;
   margin-bottom: 5px;
 }
 .card__content-detail p {
   color: #bdc1ff;
+}
+.card__content:hover {
+  cursor: pointer;
+  background-color: #4a53ba;
+}
+@media only screen and (max-width: 750px) {
+  .card__content {
+    gap: 0;
+    padding: 2.2rem;
+    padding-top: 2.5rem;
+  }
+  .card__content-detail {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.2rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .card__content {
+    border: 0;
+  }
 }
 .card--work {
   background-image: url("../../assets/images/icon-work.svg");
@@ -170,12 +210,14 @@ h3 {
   border: 0.3rem solid white;
   border-radius: 50%;
 }
-.profile__header p {
+.profile__header-text {
   margin-top: 3.8rem;
+}
+.profile__header-text p {
   color: #bdc1ff;
 }
-.profile__header h1 {
-  margin-top: 0.1rem;
+.profile__header-text h1 {
+  margin-top: 0.3rem;
 }
 .profile__tabs {
   display: flex;
@@ -201,6 +243,31 @@ h3 {
 }
 .profile__tabs .button:hover {
   color: white;
+}
+@media only screen and (max-width: 750px) {
+  .profile__header {
+    padding: 3.1rem 2.9rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+  }
+  .profile__header img {
+    width: 6.4rem;
+  }
+  .profile__header-text {
+    margin-top: 0;
+  }
+  .profile__tabs {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2.4rem 2.9rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .profile__tabs .button {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

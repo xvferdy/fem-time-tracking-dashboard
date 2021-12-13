@@ -17,18 +17,19 @@
 			border: 0.3rem solid white;
 			border-radius: 50%;
 		}
-		p {
+		&-text {
 			margin-top: 3.8rem;
-			color: $pale-blue;
-		}
-		h1 {
-			margin-top: 0.1rem;
+			p {
+				color: $pale-blue;
+			}
+			h1 {
+				margin-top: 0.3rem;
+			}
 		}
 	}
 	&__tabs {
 		display: flex;
 		flex-direction: column;
-		// justify-content: flex-start;
 		align-items: flex-start;
 		gap: 2.1rem;
 		padding: 2.6rem 3.2rem;
@@ -49,6 +50,35 @@
 			}
 			&:hover {
 				color: white;
+			}
+		}
+	}
+	@include display(phone) {
+		&__header {
+			padding: 3.1rem 2.9rem;
+
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+
+			gap: 2rem;
+			img {
+				width: 6.4rem;
+			}
+			&-text {
+				margin-top: 0;
+			}
+		}
+		&__tabs {
+			flex-direction: row;
+			justify-content: space-between;
+			padding: 2.4rem 2.9rem;
+		}
+	}
+	@include display(sm-phone) {
+		&__tabs {
+			.button {
+				font-size: 1.5rem;
 			}
 		}
 	}

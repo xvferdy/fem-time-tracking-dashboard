@@ -27,10 +27,10 @@ function Card({ title, timeframes }) {
 					<h3>{current}hrs</h3>
 					<p>
 						{period === "weekly"
-							? "Last Week"
+							? "Last Week "
 							: period === "daily"
-							? "Yesterday"
-							: "Last Month"}
+							? "Yesterday "
+							: "Last Month "}
 						- {previous}hrs
 					</p>
 				</div>

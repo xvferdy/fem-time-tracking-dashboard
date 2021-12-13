@@ -17,4 +17,10 @@ h3 {
 	font-size: 5.6rem;
 	line-height: 6.6rem;
 	font-weight: 300;
+	@include display(tab-land) {
+		font-size: 4.4rem;
+	}
+	@include display(phone) {
+		font-size: 3.2rem;
+	}
 }

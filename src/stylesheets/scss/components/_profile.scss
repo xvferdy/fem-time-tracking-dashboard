@@ -1,7 +1,7 @@
 @use "../helpers/" as *;
 
 .profile {
-	max-width: 25.5rem;
+	// max-width: 25.5rem;
 	background-color: $dark-blue;
 
 	border-radius: 1.5rem;
@@ -13,7 +13,7 @@
 		border-radius: inherit;
 
 		img {
-			width: 7.9rem;
+			width: 8rem;
 			border: 0.3rem solid white;
 			border-radius: 50%;
 		}
@@ -38,10 +38,16 @@
 			border: none;
 			background: none;
 			outline: none;
+		}
+
+		.button {
 			font-size: 1.8rem;
 			color: $desaturated-blue;
-			&:hover,
-			&:focus {
+			transition: 0.2s;
+			&--active {
+				color: white;
+			}
+			&:hover {
 				color: white;
 			}
 		}

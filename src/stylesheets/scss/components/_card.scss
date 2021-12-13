@@ -3,8 +3,9 @@
 %card-sleeve {
 	// position: relative;
 	background-repeat: no-repeat;
-	background-position: 90% 0;
-	background-size: 30px;
+	background-position: 90% -5%;
+
+	// min-height: 246px;
 }
 
 .card {
@@ -14,17 +15,32 @@
 	// display: flex;
 
 	&__content {
-		// margin-top: 21px;
+		// margin-top: 41px;
+		transform: translateY(45px);
+
 		display: flex;
 		flex-direction: column;
+
 		gap: 2.4rem;
-		height: 80%;
-		width: 100%;
-		position: absolute;
-		bottom: 0;
+
+		// height: 100%;
+		// width: 100%;
+
+		// position: absolute;
+		// bottom: 0;
+
 		background-color: $dark-blue;
-		padding: 2.9rem;
+		// padding: 2.2rem;
+		padding: 2.2rem;
+		padding-bottom: 3rem;
+
 		border-radius: 1.5rem; //FIXME:
+		border: 7px solid white;
+
+		//ss
+		// padding: 2.5rem;
+		// border: 7px solid $dark-blue;
+		// height: 203px;
 
 		&-title {
 			display: flex;
@@ -38,6 +54,7 @@
 		&-detail {
 			h3 {
 				color: white;
+				margin-bottom: 5px;
 			}
 			p {
 				color: $pale-blue;

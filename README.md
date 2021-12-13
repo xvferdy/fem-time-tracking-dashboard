@@ -10,12 +10,12 @@
 
 ## 📍Table of Contents
 - [Brief](#brief)
-	- [The challenge](#the-challenge)
-	- [Links](#links)
+- [The challenge](#the-challenge)
+- [Links](#links)
 - [My process](#my-process)
-	- [Built with](#built-with)
-	- [What I learned](#what-i-learned-)
-	- [Difficult Things](#difficult-things-)
+- [Built with](#built-with)
+- [What I learned](#what-i-learned-)
+- [Difficult Things](#difficult-things-)
 - [Author](#author)
 
 ## Brief
@@ -31,7 +31,7 @@ If you would like to practice working with JSON data, we provide a local `data.j
 
 ![Design preview for the Loopstudios landing page coding challenge](./src/assets/overview.png)
 
-### The challenge 
+## The challenge 
 Users should be able to:
   
 | Challenge | Newbie | Junior | Intermediate | Advanced |
@@ -42,7 +42,7 @@ Users should be able to:
 
 [![🐬 Junior Difficulty List](https://img.shields.io/badge/Difficulty-Junior-3F54A3?style=for-the-badge&logo=frontendmentor "Junior Difficulty")](https://www.frontendmentor.io/challenges?difficulties=2)
 
-### Links
+## Links
 - Solution URL: Later
 - Live Site URL: [Here](https://fem-time-tracking-dashboard.netlify.app/ "Live")
 
@@ -53,10 +53,10 @@ Users should be able to:
 > ▐ <br>
 > 🗓️ Still working on it and later will uploaded in [**main**](https://github.com/xvferdy/fem-time-tracking-dashboard) branch
 
-### Built with
+## Built with
 - [React](https://reactjs.org/ "React js")
 
-### What I learned 🥳
+## What I learned 🥳
 Learn how to change background opacity without affecting text. 👉 `rgba($color: #000000, $alpha: 1.0)`
 
 ###### src/stylesheets/components/\_card.scss
@@ -74,7 +74,7 @@ Learn how to change background opacity without affecting text. 👉 `rgba($color
 }
 ```
 
-### Difficult Things 😵‍💫
+## Difficult Things 😵‍💫
 Things were difficult for me and I finally gave up
 - [ ] `grid`
 

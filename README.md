@@ -47,15 +47,17 @@ Users should be able to:
 - Live Site URL: [Here](https://fem-time-tracking-dashboard.netlify.app/ "Live")
 
 ## My process
-> ⌛ I challenge my self to finish this for **~3 days** <br>
+> ⌛ I challenge my self to finish this for ***~3 days*** <br>
 > ▐ <br>
-> 🧑‍💻 Wiring up HTML skeleton <br>
+> 🧑‍💻 Folder structure & basic sass boilerplate `~2 hours` <br>
 > ▐ <br>
-> 🧑‍💻 **Javascript** `~4 Hours`<br>
+> 🧑‍💻 **HTML** skeleton `~2.5 hours` <br>
 > ▐ <br>
-> 🧑‍💻 **Little CSS** `~3 Hours`<br>
+> 😭 **Javascript** `~4 hours`<br>
 > ▐ <br>
-> 🌐 **Day 3** - Submit to [**Frontend Mentor**](https://www.frontendmentor.io/home)  <br>
+> 🧑‍💻 Little **CSS** `~3 hours`<br>
+> ▐ <br>
+> 🌐 ***Day 3*** - Submit to [**Frontend Mentor**](https://www.frontendmentor.io/home)  <br>
 > ▐ <br>
 > 🗓️ Still working on it and later will uploaded in [**main**](https://github.com/xvferdy/fem-time-tracking-dashboard) branch
 

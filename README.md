@@ -75,8 +75,9 @@ Learn how to change background opacity without affecting text. 👉 `rgba($color
 ```
 
 ## Difficult Things 😵‍💫
-Things were difficult for me and I finally gave up
+Things were difficult for me and I finally gave up 🤙
 - [ ] `grid`
+- [ ] Mobile view
 
 ## Author
 | [<img src="https://avatars.githubusercontent.com/u/47988956?v=4" alt="xvferdy" width="100px"/><br><sub><samp>Berlianto</samp></sub>](https://github.com/xvferdy)  |

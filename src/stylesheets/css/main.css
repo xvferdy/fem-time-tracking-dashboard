@@ -125,7 +125,7 @@ h3 {
   padding: 2.2rem;
   padding-bottom: 3rem;
   border-radius: 1.5rem;
-  border: 7px solid #1c1f4a;
+  border: 7px solid white;
   transition: 0.2s;
 }
 .card__content-title {

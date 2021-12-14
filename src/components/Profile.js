@@ -12,7 +12,12 @@ const headerVariants = {
 	},
 	visible: {
 		y: 0,
-		backgroundColor: ["hsl(15, 100%, 70%)", "hsl(246, 80%, 60%)"],
+		// backgroundColor: ["hsl(15, 100%, 70%)", "hsl(246, 80%, 60%)"],
+		backgroundColor: [
+			"rgb(255, 92, 124)",
+			"rgb(86, 194, 230)",
+			"rgb(56, 78, 175)",
+		],
 		transition: {
 			duration: 2,
 			ease: "anticipate",

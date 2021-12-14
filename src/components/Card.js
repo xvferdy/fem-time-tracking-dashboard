@@ -28,7 +28,7 @@ const contentVariants = {
 	},
 };
 
-function Card({ title, timeframes }) {
+function Card({ id, title, timeframes }) {
 	const period = useContext(PeriodContext);
 	const [periodDetails, setPeriodDetails] = useState({});
 	const { current, previous } = periodDetails;
@@ -41,7 +41,6 @@ function Card({ title, timeframes }) {
 	}, [period, timeframes]);
 
 	const [isShow, setIsShow] = useState(true);
-	const control = useAnimation();
 
 	return (
 		<motion.div
@@ -64,14 +63,52 @@ function Card({ title, timeframes }) {
 							<p>{title}</p>
 							<img src={ellipsis} alt="" />
 						</div>
-						<AnimatePresence exitBeforeEnter>
+						<AnimatePresence exitBeforeEnter initial={false}>
 							<motion.div
 								className="card__content-detail"
 								key={period && period}
-								animate={{ opacity: 1, y: 0 }}
-								initial={{ opacity: 0, y: 10 }}
-								exit={{ opacity: 1, y: -10 }}
-								transition={{ duration: 0.15 }}
+								// initial={{ opacity: 0, y: 10 }}
+								// animate={{ opacity: 1, y: 0 }}
+								// exit={{ opacity: 1, y: -10 }}
+								// transition={{ duration: 0.15 }}
+
+								//    @keyframes swing-out-top-bck {
+								//      0% {
+								//        -webkit-transform: rotateX(0deg);
+								//                transform: rotateX(0deg);
+								//        -webkit-transform-origin: top;
+								//                transform-origin: top;
+								//        opacity: 1;
+								//      }
+								//      100% {
+								//        -webkit-transform: rotateX(-100deg);
+								//                transform: rotateX(-100deg);
+								//        -webkit-transform-origin: top;
+								//                transform-origin: top;
+								//        opacity: 0;
+								//      }
+								//    }
+
+								initial={{
+									rotateX: "70deg",
+									originY: "top",
+									opacity: 0,
+								}}
+								animate={{
+									rotateX: "0deg",
+									originY: "top",
+									opacity: 1,
+								}}
+								exit={{
+									rotateX: "-100deg",
+									originY: "top",
+									opacity: 0,
+								}}
+								transition={{
+									type: "tween",
+
+									delay: id * 0.05,
+								}}
 							>
 								<h3>{current}hrs</h3>
 								<p>

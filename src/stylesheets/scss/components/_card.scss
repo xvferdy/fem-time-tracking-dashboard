@@ -1,54 +1,108 @@
 @use "../helpers/" as *;
 
 %card-sleeve {
-	// position: relative;
 	background-repeat: no-repeat;
-	background-position: 90% 0;
-	background-size: 30px;
+	background-position: 90% -5%;
 }
 
 .card {
-	// border-radius: 1.5rem;
 	position: relative;
-	overflow: hidden;
-
+	// overflow: hidden;
+	border-radius: 1.5rem;
 	&__content {
-		margin-top: 21px;
-		background-color: rosybrown;
-		height: 80%;
+		display: flex;
+		flex-direction: column;
+		gap: 2.4rem;
+
+		// height: 80%;
 		width: 100%;
+
 		position: absolute;
 		bottom: 0;
+
+		background-color: $dark-blue;
+
+		padding: 2.2rem;
+		padding-bottom: 3rem;
+
+		border-radius: 1.5rem; //FIXME:
+		// border-bottom-left-radius: 1rem;
+		// border-bottom-right-radius: 1rem;
+
+		// border: 7px solid white;
+		//ss
+		border: 7px solid $dark-blue;
+		transition: 0.2s;
+		&-title {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			p {
+				font-size: 1.8rem;
+				color: white;
+			}
+			img:hover {
+				filter: brightness(1.75);
+			}
+		}
+		&-detail {
+			h3 {
+				color: white;
+				margin-bottom: 5px;
+			}
+			p {
+				color: $pale-blue;
+			}
+		}
+		&:hover {
+			cursor: pointer;
+			background-color: darken($desaturated-blue, 10%);
+		}
+		@include display(phone) {
+			gap: 0;
+			padding: 2.2rem;
+			padding-top: 2.5rem;
+			&-detail {
+				display: flex;
+				justify-content: space-between;
+				gap: 0.2rem;
+				align-items: center;
+				flex-wrap: wrap;
+			}
+		}
+		@include display(sm-phone) {
+			border: 0;
+		}
 	}
 
 	&--work {
 		background-image: url("../../assets/images/icon-work.svg");
-		background-color: chartreuse;
+		background-color: $light-red-work;
 		@extend %card-sleeve;
 	}
 	&--play {
 		background-image: url("../../assets/images/icon-play.svg");
-		background-color: chartreuse;
+		background-color: $soft-blue-play;
 		@extend %card-sleeve;
 	}
 	&--study {
 		background-image: url("../../assets/images/icon-study.svg");
-		background-color: chartreuse;
+		background-color: $light-red-study;
 		@extend %card-sleeve;
 	}
 	&--exercise {
 		background-image: url("../../assets/images/icon-exercise.svg");
-		background-color: chartreuse;
+		background-color: $lime-green-exercise;
 		@extend %card-sleeve;
 	}
 	&--social {
 		background-image: url("../../assets/images/icon-social.svg");
-		background-color: chartreuse;
+		background-color: $violet-social;
 		@extend %card-sleeve;
 	}
 	&--self-care {
 		background-image: url("../../assets/images/icon-self-care.svg");
-		background-color: rgb(132, 155, 108);
+		background-color: $soft-orange-self-care;
 		@extend %card-sleeve;
 	}
 }

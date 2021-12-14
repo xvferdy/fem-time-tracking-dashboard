@@ -1,6 +1,11 @@
+@use "../helpers/" as *;
+
 .container {
 	min-height: calc(100vh - 20px);
 	display: grid;
 	place-items: center;
-	padding: 2.4rem;
+	padding: 7.2rem 2.4rem;
+	@include display(phone) {
+		display: block;
+	}
 }

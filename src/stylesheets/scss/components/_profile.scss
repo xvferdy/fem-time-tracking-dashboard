@@ -1,0 +1,85 @@
+@use "../helpers/" as *;
+
+.profile {
+	// max-width: 25.5rem;
+	background-color: $dark-blue;
+
+	border-radius: 1.5rem;
+	&__header {
+		padding: 3.4rem 2.9rem;
+		padding-right: 7.5rem;
+		padding-bottom: 10.4rem;
+		background-color: $blue;
+		border-radius: inherit;
+
+		img {
+			width: 8rem;
+			border: 0.3rem solid white;
+			border-radius: 50%;
+		}
+		&-text {
+			margin-top: 3.8rem;
+			p {
+				color: $pale-blue;
+			}
+			h1 {
+				margin-top: 0.3rem;
+			}
+		}
+	}
+	&__tabs {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 2.1rem;
+		padding: 2.6rem 3.2rem;
+		padding-bottom: 3.2rem;
+		button {
+			cursor: pointer;
+			border: none;
+			background: none;
+			outline: none;
+		}
+
+		.button {
+			font-size: 1.8rem;
+			color: $desaturated-blue;
+			transition: 0.2s;
+			&--active {
+				color: white;
+			}
+			&:hover {
+				color: white;
+			}
+		}
+	}
+	@include display(phone) {
+		&__header {
+			padding: 3.1rem 2.9rem;
+
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+
+			gap: 2rem;
+			img {
+				width: 6.4rem;
+			}
+			&-text {
+				margin-top: 0;
+			}
+		}
+		&__tabs {
+			flex-direction: row;
+			justify-content: space-between;
+			padding: 2.4rem 2.9rem;
+		}
+	}
+	@include display(sm-phone) {
+		&__tabs {
+			.button {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}

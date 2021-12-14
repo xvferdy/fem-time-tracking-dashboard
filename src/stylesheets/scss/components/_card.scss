@@ -13,26 +13,17 @@
 		display: flex;
 		flex-direction: column;
 		gap: 2.4rem;
-
-		// height: 80%;
 		width: 100%;
-
 		position: absolute;
 		bottom: 0;
-
 		background-color: $dark-blue;
-
 		padding: 2.2rem;
 		padding-bottom: 3rem;
-
 		border-radius: 1.5rem; //FIXME:
-		// border-bottom-left-radius: 1rem;
-		// border-bottom-right-radius: 1rem;
 
-		border: 7px solid white;
+		border: 7px solid white; //TODO:
+		// border: 7px solid $dark-blue; //TODO:
 
-		//ss
-		// border: 7px solid $dark-blue;
 		transition: 0.2s;
 		&-title {
 			display: flex;

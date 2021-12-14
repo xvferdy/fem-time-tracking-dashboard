@@ -1,9 +1,7 @@
 @use "../helpers/" as *;
 
 .profile {
-	// max-width: 25.5rem;
 	background-color: $dark-blue;
-
 	border-radius: 1.5rem;
 	&__header {
 		position: relative;
@@ -30,9 +28,6 @@
 	}
 	&__tabs {
 		position: relative;
-		// transform: translateY(-100px);
-		// z-index: 5;
-
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -45,7 +40,6 @@
 			background: none;
 			outline: none;
 		}
-
 		.button {
 			font-size: 1.8rem;
 			color: $desaturated-blue;

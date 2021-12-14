@@ -67,28 +67,6 @@ function Card({ id, title, timeframes }) {
 							<motion.div
 								className="card__content-detail"
 								key={period && period}
-								// initial={{ opacity: 0, y: 10 }}
-								// animate={{ opacity: 1, y: 0 }}
-								// exit={{ opacity: 1, y: -10 }}
-								// transition={{ duration: 0.15 }}
-
-								//    @keyframes swing-out-top-bck {
-								//      0% {
-								//        -webkit-transform: rotateX(0deg);
-								//                transform: rotateX(0deg);
-								//        -webkit-transform-origin: top;
-								//                transform-origin: top;
-								//        opacity: 1;
-								//      }
-								//      100% {
-								//        -webkit-transform: rotateX(-100deg);
-								//                transform: rotateX(-100deg);
-								//        -webkit-transform-origin: top;
-								//                transform-origin: top;
-								//        opacity: 0;
-								//      }
-								//    }
-
 								initial={{
 									rotateX: "70deg",
 									originY: "top",
@@ -106,7 +84,6 @@ function Card({ id, title, timeframes }) {
 								}}
 								transition={{
 									type: "tween",
-
 									delay: id * 0.05,
 								}}
 							>

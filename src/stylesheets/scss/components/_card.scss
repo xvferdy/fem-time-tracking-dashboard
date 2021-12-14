@@ -7,7 +7,7 @@
 
 .card {
 	position: relative;
-	// overflow: hidden;
+	overflow: hidden;
 	border-radius: 1.5rem;
 	&__content {
 		display: flex;
@@ -29,14 +29,16 @@
 		// border-bottom-left-radius: 1rem;
 		// border-bottom-right-radius: 1rem;
 
-		// border: 7px solid white;
+		border: 7px solid white;
+
 		//ss
-		border: 7px solid $dark-blue;
+		// border: 7px solid $dark-blue;
 		transition: 0.2s;
 		&-title {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+
 			p {
 				font-size: 1.8rem;
 				color: white;

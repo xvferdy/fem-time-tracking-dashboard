@@ -1,9 +1,29 @@
 import React, { useContext } from "react";
+import { motion } from "framer-motion";
 
 import { DispatchPeriodContext } from "../context/Period.context";
 import { PeriodContext } from "../context/Period.context";
 
 import avatar from "../assets/images/image-jeremy.png";
+
+const headerVariants = {
+	hidden: {
+		y: -80,
+	},
+	visible: {
+		y: 0,
+		// backgroundColor: ["hsl(15, 100%, 70%)", "hsl(246, 80%, 60%)"],
+		backgroundColor: [
+			"rgb(255, 92, 124)",
+			"rgb(86, 194, 230)",
+			"rgb(56, 78, 175)",
+		],
+		transition: {
+			duration: 2,
+			ease: "anticipate",
+		},
+	},
+};
 
 function Profile() {
 	const dispatch = useContext(DispatchPeriodContext);
@@ -11,14 +31,41 @@ function Profile() {
 
 	return (
 		<section className="profile">
-			<div className="profile__header">
+			<motion.div
+				className="profile__header"
+				variants={headerVariants}
+				initial="hidden"
+				animate="visible"
+			>
 				<img src={avatar} alt="Jeremy profile avatar" />
 				<div className="profile__header-text">
 					<p>Report for</p>
-					<h1>Jeremy Robson</h1>
+					<motion.h1
+						whileHover={{
+							color: [
+								"#fff",
+								"#ff8c66",
+								"#56c2e6",
+								"#ff5c7c",
+								"#4acf81",
+								"#f1c65b",
+							],
+							transition: {
+								duration: 2,
+								yoyo: Infinity,
+							},
+						}}
+					>
+						Jeremy Robson
+					</motion.h1>
 				</div>
-			</div>
-			<div className="profile__tabs">
+			</motion.div>
+			<motion.div
+				className="profile__tabs"
+				initial={{ y: -250 }}
+				animate={{ y: 0 }}
+				transition={{ duration: 2, ease: "anticipate" }}
+			>
 				<button
 					className={period === "daily" ? "button button--active" : "button"}
 					onClick={() => dispatch({ type: "DAILY" })}
@@ -37,7 +84,7 @@ function Profile() {
 				>
 					Monthly
 				</button>
-			</div>
+			</motion.div>
 		</section>
 	);
 }

@@ -9,7 +9,7 @@ function Dashboard() {
 		<section className="dashboard">
 			<Profile />
 			{SUMMARY_DATA.map((activity, idx) => (
-				<Card key={idx} {...activity} />
+				<Card key={idx} id={idx} {...activity} />
 			))}
 		</section>
 	);

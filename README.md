@@ -29,7 +29,7 @@ If you would like to practice working with JSON data, we provide a local `data.j
 
 **Preview** :eyeglasses:
 
-![Design preview for the Loopstudios landing page coding challenge](./src/assets/overview.png)
+![Design preview for the Loopstudios landing page coding challenge](./src/assets/design/desktop-preview.jpg)
 
 ## The challenge 
 Users should be able to:

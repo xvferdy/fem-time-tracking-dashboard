@@ -49,17 +49,21 @@ Users should be able to:
 ## My process
 > ⌛ I challenge my self to finish this for ***~3 days*** <br>
 > ▐ <br>
-> 🧑‍💻 Folder structure & basic sass boilerplate `~2 hours` <br>
+> 🧑‍💻 ***Day 1.*** Folder structure & basic sass boilerplate ~2 hours <br>
 > ▐ <br>
-> 🧑‍💻 **HTML** skeleton `~2.5 hours` <br>
+> 🧑‍💻 ***Day 2.*** [HTML]() skeleton <kbd>~2.5 hours</kbd> <br>
+> ▐ <sub>Plus starting making a very basic layout using `grid` </sub> <br>
 > ▐ <br>
-> 😭 **Javascript** `~4 hours`<br>
+> 😭 ***Day 3.*** [Javascript]() day<br>
+> ▐ <sub>Working with JSON file <kbd>~4 hours</kbd></sub> <br>
 > ▐ <br>
-> 🧑‍💻 Little **CSS** `~3 hours`<br>
+> 🌐 ***Day 3.*** Submit to [**Frontend Mentor**](https://www.frontendmentor.io/home) 🚩 <br>
+> ▐ <sub>Add some [CSS]() around <kbd>~3 hours</kbd></sub> <br>
 > ▐ <br>
-> 🌐 ***Day 3*** - Submit to [**Frontend Mentor**](https://www.frontendmentor.io/home)  <br>
-> ▐ <br>
-> 🗓️ Still working on it and later will uploaded in [**main**](https://github.com/xvferdy/fem-time-tracking-dashboard) branch
+> 🗓️ ***Day 4 - 5.*** Continuing incomplete design <br>
+> ▐ <sub>Try to fix buggy style <kbd>~6.5 hours</kbd></sub> <br>
+> ▐ <sub>Responsive design <kbd>~3 hours</kbd></sub> <br>
+> 🗓️ 
 
 ## Built with
 - [React](https://reactjs.org/ "React js")

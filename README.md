@@ -49,7 +49,7 @@ Users should be able to:
 ## My process
 > ⌛ I challenge my self to finish this for ***~3 days*** <br>
 > ▐ <br>
-> 🧑‍💻 ***Day 1.*** Folder structure & basic sass boilerplate ~2 hours <br>
+> 🧑‍💻 ***Day 1.*** Folder structure & basic [Sass](https://sass-lang.com/) boilerplate ~2 hours <br>
 > ▐ <br>
 > 🧑‍💻 ***Day 2.*** [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) skeleton <kbd>~2.5 hours</kbd> <br>
 > ▐ <sub>Plus starting making a very basic layout using `grid` </sub> <br>

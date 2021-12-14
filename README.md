@@ -60,7 +60,7 @@ Users should be able to:
 > 🌐 ***Day 3.*** Submit to [**Frontend Mentor**](https://www.frontendmentor.io/solutions/femtimetrackingdashboard-ujF6vcWFM "Solution") 🚩 <br>
 > ▐ <sub>Add some [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) for coloring <kbd>~3 hours</kbd></sub> <br>
 > ▐ <br>
-> 🗓️ ***Day 4 - 5.*** Continuing incomplete design <br>
+> 🗓️ ***Day 4-5.*** Continuing incomplete design <br>
 > ▐ <sub>Try to fix buggy style <kbd>~6.5 hours</kbd></sub> <br>
 > ▐ <sub>Responsive design <kbd>~3 hours</kbd></sub> <br>
 > ▐ <sub>Tried to figuring out how to add animation <kbd>~1 day</kbd></sub> <br>

@@ -15,7 +15,6 @@ const cardVariants = {
 		y: 0,
 		transition: {
 			duration: 1.2,
-			ease: "backOut",
 		},
 	},
 };
@@ -42,36 +41,49 @@ function Card({ title, timeframes }) {
 	}, [period, timeframes]);
 
 	const [isShow, setIsShow] = useState(true);
+	const control = useAnimation();
+
 	return (
 		<motion.div
 			className={`card card--${title.toLowerCase().split(" ").join("-")}`}
 			variants={cardVariants}
 			initial="hidden"
 			animate="visible"
-			// onClick={() => setIsShow(!isShow)}
+			onClick={() => setIsShow(!isShow)}
 		>
-			<AnimatePresence>
+			<AnimatePresence exitBeforeEnter>
 				{isShow && (
 					<motion.div
 						className="card__content"
 						variants={contentVariants}
+						initial="hidden"
+						animate="visible"
 						exit={{ y: 200, opacity: 0 }}
 					>
 						<div className="card__content-title">
 							<p>{title}</p>
 							<img src={ellipsis} alt="" />
 						</div>
-						<div className="card__content-detail">
-							<h3>{current}hrs</h3>
-							<p>
-								{period === "weekly"
-									? "Last Week "
-									: period === "daily"
-									? "Yesterday "
-									: "Last Month "}
-								- {previous}hrs
-							</p>
-						</div>
+						<AnimatePresence exitBeforeEnter>
+							<motion.div
+								className="card__content-detail"
+								key={period && period}
+								animate={{ opacity: 1, y: 0 }}
+								initial={{ opacity: 0, y: 10 }}
+								exit={{ opacity: 1, y: -10 }}
+								transition={{ duration: 0.15 }}
+							>
+								<h3>{current}hrs</h3>
+								<p>
+									{period === "weekly"
+										? "Last Week "
+										: period === "daily"
+										? "Yesterday "
+										: "Last Month "}
+									- {previous}hrs
+								</p>
+							</motion.div>
+						</AnimatePresence>
 					</motion.div>
 				)}
 			</AnimatePresence>

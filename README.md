@@ -49,7 +49,7 @@ Users should be able to:
 ## My process
 > ⌛ I challenge my self to finish this for ***~3 days*** <br>
 > ▐ <br>
-> 🧑‍💻 ***Day 1.*** Folder structure & basic [Sass](https://sass-lang.com/) boilerplate ~2 hours <br>
+> 🧑‍💻 ***Day 1.*** Folder structure & basic [Sass](https://sass-lang.com/) boilerplate <kbd>~2 hours</kbd> <br>
 > ▐ <br>
 > 🧑‍💻 ***Day 2.*** [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) skeleton <kbd>~2.5 hours</kbd> <br>
 > ▐ <sub>Plus starting making a very basic layout using `grid` </sub> <br>
@@ -57,7 +57,7 @@ Users should be able to:
 > 😭 ***Day 3.*** [Javascript](https://www.javascript.com/) day<br>
 > ▐ <sub>Working with JSON file <kbd>~4 hours</kbd></sub> <br>
 > ▐ <br>
-> 🌐 ***Day 3.*** Submit to [**Frontend Mentor**](https://www.frontendmentor.io/home) 🚩 <br>
+> 🌐 ***Day 3.*** Submit to [**Frontend Mentor**](https://www.frontendmentor.io/solutions/femtimetrackingdashboard-ujF6vcWFM "Solution") 🚩 <br>
 > ▐ <sub>Add some [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) around <kbd>~3 hours</kbd></sub> <br>
 > ▐ <br>
 > 🗓️ ***Day 4 - 5.*** Continuing incomplete design <br>

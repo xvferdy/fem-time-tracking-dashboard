@@ -15,7 +15,7 @@ const headerVariants = {
 		backgroundColor: [
 			"rgb(255, 92, 124)",
 			"rgb(86, 194, 230)",
-			"rgb(56, 78, 175)",
+			"rgb(88, 71, 235)",
 		],
 		transition: {
 			duration: 2,

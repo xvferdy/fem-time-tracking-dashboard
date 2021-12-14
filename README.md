@@ -44,7 +44,7 @@ Users should be able to:
 
 ## Links
 - Solution URL: [Here](https://www.frontendmentor.io/solutions/femtimetrackingdashboard-ujF6vcWFM)
-- Live Site URL: [Here](https://fem-time-tracking-dashboard.netlify.app/ "Live")
+- Live Site URL: [Here](https://time-tracking-dashboard-xvferdy.netlify.app/ "Live")
 
 ## My process
 > ⌛ I challenge my self to finish this for ***~3 days*** <br>

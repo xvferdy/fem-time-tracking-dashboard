@@ -22,7 +22,7 @@
 A perfect opportunity to practice your CSS Grid skills. For anyone wanting to take it up a notch, we provide a JSON data file to practice working with data.
 
 This challenge is perfect if you're looking to test your CSS Grid chops. Even without Grid, this project will be a fun one to help you practice your layout skills!
-Your challenge is to build out this dashboard and get it looking as close to the design as possible.
+Your challenge is to build out this **dashboard** and get it looking as close to the design as possible.
 You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go 👍.
 
 If you would like to practice working with JSON data, we provide a local `data.json` file for the activities. This means you'll be able to pull the data from there instead of using the content in the `.html` file.
